@@ -1,0 +1,10 @@
+cache:
+  build: .
+  volumes:
+    - ./config:/etc/varnish
+  ports:
+    - "8080:80"
+  environment:
+    - "VARNISH_BACKEND_PORT=3000"
+    - "VARNISH_PORT=80"
+    - "VARNISH_BACKEND_IP=172.17.42.1"
