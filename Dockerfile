@@ -10,10 +10,6 @@ RUN apt-get update -qq && \
 
 ADD start.sh /start.sh
 
-
-# Expose port 80
-EXPOSE 80
-
 # Make our custom VCLs available on the container
 ADD config/default.vcl /etc/varnish/default.vcl
 
