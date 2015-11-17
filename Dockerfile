@@ -15,6 +15,6 @@ ADD start.sh /start.sh
 EXPOSE 80
 
 # Make our custom VCLs available on the container
-ADD default.vcl /etc/varnish/default.vcl
+ADD config/default.vcl /etc/varnish/default.vcl
 
 CMD ["/start.sh"]
