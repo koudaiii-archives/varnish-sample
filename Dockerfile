@@ -18,5 +18,6 @@ ADD start.sh /start.sh
 
 # Make our custom VCLs available on the container
 ADD config/default.vcl /etc/varnish/default.vcl
+ADD config/varnish /etc/default/varnish
 
 CMD ["/start.sh"]
